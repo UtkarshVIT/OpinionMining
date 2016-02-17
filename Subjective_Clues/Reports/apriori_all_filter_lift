@@ -1,0 +1,250 @@
+    lhs             rhs          support confidence     lift
+1   {AffTot}     => {AffOth}  0.01227390  0.9047619 73.71429
+2   {AffOth}     => {AffTot}  0.01227390  1.0000000 73.71429
+3   {SklOth}     => {SklTOT}  0.01873385  1.0000000 53.37931
+4   {SklTOT}     => {SklOth}  0.01873385  1.0000000 53.37931
+5   {EMOT,                                                  
+     Ngtv,                                                  
+     WlbTot}     => {WlbPsyc} 0.01098191  1.0000000 40.73684
+6   {EMOT,                                                  
+     Negativ,                                               
+     Ngtv,                                                  
+     WlbTot}     => {WlbPsyc} 0.01098191  1.0000000 40.73684
+7   {EMOT,                                                  
+     WlbTot}     => {WlbPsyc} 0.01550388  0.9600000 39.10737
+8   {EMOT,                                                  
+     Negativ,                                               
+     WlbTot}     => {WlbPsyc} 0.01162791  0.9473684 38.59280
+9   {Pstv,                                                  
+     RspTot}     => {RspOth}  0.01485788  1.0000000 36.00000
+10  {Positiv,                                               
+     RspTot}     => {RspOth}  0.01937984  1.0000000 36.00000
+11  {Positiv,                                               
+     Pstv,                                                  
+     RspTot}     => {RspOth}  0.01485788  1.0000000 36.00000
+12  {Objective,                                             
+     Positiv,                                               
+     RspTot}     => {RspOth}  0.01033592  1.0000000 36.00000
+13  {Active,                                                
+     Hostile,                                               
+     PowTot}     => {PowCon}  0.01227390  0.9500000 35.86829
+14  {RcEthic}    => {RcTot}   0.02260982  1.0000000 34.40000
+15  {RcTot}      => {RcEthic} 0.02260982  0.7777778 34.40000
+16  {RcEthic,                                               
+     Subjective} => {RcTot}   0.01291990  1.0000000 34.40000
+17  {Objective,                                             
+     RspTot}     => {RspOth}  0.01356589  0.9545455 34.36364
+18  {Hostile,                                               
+     Ngtv,                                                  
+     PowTot}     => {PowCon}  0.01291990  0.9090909 34.32373
+19  {Hostile,                                               
+     Negativ,                                               
+     Ngtv,                                                  
+     PowTot}     => {PowCon}  0.01291990  0.9090909 34.32373
+20  {Ngtv,                                                  
+     Pain,                                                  
+     WlbTot}     => {WlbPsyc} 0.01033592  0.8421053 34.30471
+21  {Negativ,                                               
+     Ngtv,                                                  
+     Pain,                                                  
+     WlbTot}     => {WlbPsyc} 0.01033592  0.8421053 34.30471
+22  {RcTot,                                                 
+     Subjective} => {RcEthic} 0.01291990  0.7692308 34.02198
+23  {Pain,                                                  
+     WlbTot}     => {WlbPsyc} 0.01098191  0.8095238 32.97744
+24  {Negativ,                                               
+     Pain,                                                  
+     WlbTot}     => {WlbPsyc} 0.01098191  0.8095238 32.97744
+25  {RspOth}     => {RspTot}  0.02777778  1.0000000 32.93617
+26  {RspTot}     => {RspOth}  0.02777778  0.9148936 32.93617
+27  {Pstv,                                                  
+     RspOth}     => {RspTot}  0.01485788  1.0000000 32.93617
+28  {Positiv,                                               
+     RspOth}     => {RspTot}  0.01937984  1.0000000 32.93617
+29  {Objective,                                             
+     RspOth}     => {RspTot}  0.01356589  1.0000000 32.93617
+30  {RspOth,                                                
+     Subjective} => {RspTot}  0.01421189  1.0000000 32.93617
+31  {Positiv,                                               
+     Pstv,                                                  
+     RspOth}     => {RspTot}  0.01485788  1.0000000 32.93617
+32  {Objective,                                             
+     Positiv,                                               
+     RspOth}     => {RspTot}  0.01033592  1.0000000 32.93617
+33  {Hostile,                                               
+     PowTot}     => {PowCon}  0.01614987  0.8620690 32.54836
+34  {Hostile,                                               
+     PowTot,                                                
+     Subjective} => {PowCon}  0.01098191  0.8500000 32.09268
+35  {Ngtv,                                                  
+     PowTot,                                                
+     Subjective} => {PowCon}  0.01033592  0.8421053 31.79461
+36  {Negativ,                                               
+     Ngtv,                                                  
+     PowTot,                                                
+     Subjective} => {PowCon}  0.01033592  0.8421053 31.79461
+37  {Hostile,                                               
+     Negativ,                                               
+     PowTot}     => {PowCon}  0.01356589  0.8400000 31.71512
+38  {RspTot,                                                
+     Subjective} => {RspOth}  0.01421189  0.8800000 31.68000
+39  {EMOT,                                                  
+     Positiv}    => {Pleasur} 0.01098191  0.6538462 30.67133
+40  {Ngtv,                                                  
+     PowTot}     => {PowCon}  0.01550388  0.8000000 30.20488
+41  {Negativ,                                               
+     Ngtv,                                                  
+     PowTot}     => {PowCon}  0.01550388  0.8000000 30.20488
+42  {Negativ,                                               
+     PowTot,                                                
+     Subjective} => {PowCon}  0.01098191  0.7727273 29.17517
+43  {EMOT,                                                  
+     Negativ,                                               
+     WlbTot}     => {Pain}    0.01033592  0.8421053 28.33867
+44  {Negativ,                                               
+     PowTot}     => {PowCon}  0.01614987  0.7352941 27.76184
+45  {Ngtv,                                                  
+     WlbPsyc}    => {Pain}    0.01033592  0.8000000 26.92174
+46  {Ngtv,                                                  
+     WlbPsyc,                                               
+     WlbTot}     => {Pain}    0.01033592  0.8000000 26.92174
+47  {Negativ,                                               
+     Ngtv,                                                  
+     WlbPsyc}    => {Pain}    0.01033592  0.8000000 26.92174
+48  {Negativ,                                               
+     Ngtv,                                                  
+     WlbPsyc,                                               
+     WlbTot}     => {Pain}    0.01033592  0.8000000 26.92174
+49  {EMOT,                                                  
+     Ngtv}       => {Pain}    0.01421189  0.7586207 25.52924
+50  {EMOT,                                                  
+     Negativ,                                               
+     Ngtv}       => {Pain}    0.01421189  0.7586207 25.52924
+51  {Negativ,                                               
+     WlbPsyc}    => {Pain}    0.01098191  0.7391304 24.87335
+52  {Negativ,                                               
+     WlbPsyc,                                               
+     WlbTot}     => {Pain}    0.01098191  0.7391304 24.87335
+53  {EMOT,                                                  
+     Negativ}    => {Pain}    0.02067183  0.7272727 24.47431
+54  {EMOT,                                                  
+     Ngtv}       => {WlbPsyc} 0.01098191  0.5862069 23.88022
+55  {EMOT,                                                  
+     Negativ,                                               
+     Ngtv}       => {WlbPsyc} 0.01098191  0.5862069 23.88022
+56  {EMOT,                                                  
+     Negativ,                                               
+     Subjective} => {Pain}    0.01098191  0.6800000 22.88348
+57  {Ngtv,                                                  
+     Pain}       => {WlbPsyc} 0.01033592  0.5517241 22.47550
+58  {Passive,                                               
+     WlbTot}     => {WlbPsyc} 0.01033592  0.5517241 22.47550
+59  {Negativ,                                               
+     Ngtv,                                                  
+     Pain}       => {WlbPsyc} 0.01033592  0.5517241 22.47550
+60  {EMOT,                                                  
+     WlbTot}     => {Pain}    0.01033592  0.6400000 21.53739
+61  {COM,                                                   
+     ComForm,                                               
+     Objective}  => {FormLw}  0.02002584  1.0000000 20.91892
+62  {ComForm,                                               
+     FormLw,                                                
+     Subjective} => {COM}     0.02002584  0.9393939 20.77403
+63  {COM,                                                   
+     ComForm}    => {FormLw}  0.04005168  0.9841270 20.58687
+64  {ComForm,                                               
+     FormLw}     => {COM}     0.04005168  0.9253731 20.46397
+65  {Negativ,                                               
+     WlbTot}     => {WlbPsyc} 0.01485788  0.5000000 20.36842
+66  {ComForm,                                               
+     EnlTot,                                                
+     FormLw}     => {COM}     0.01485788  0.9200000 20.34514
+67  {COM,                                                   
+     ComForm,                                               
+     Subjective} => {FormLw}  0.02002584  0.9687500 20.26520
+68  {FormLw,                                                
+     Subjective} => {COM}     0.02067183  0.9142857 20.21878
+69  {ComForm,                                               
+     FormLw,                                                
+     Objective}  => {COM}     0.02002584  0.9117647 20.16303
+70  {COM,                                                   
+     ComForm,                                               
+     EnlTot}     => {FormLw}  0.01485788  0.9583333 20.04730
+71  {ComForm,                                               
+     EnlOth,                                                
+     FormLw}     => {COM}     0.01098191  0.8947368 19.78647
+72  {ComForm,                                               
+     EnlOth,                                                
+     EnlTot,                                                
+     FormLw}     => {COM}     0.01098191  0.8947368 19.78647
+73  {COM,                                                   
+     ComForm,                                               
+     EnlOth}     => {FormLw}  0.01098191  0.9444444 19.75676
+74  {COM,                                                   
+     ComForm,                                               
+     EnlOth,                                                
+     EnlTot}     => {FormLw}  0.01098191  0.9444444 19.75676
+75  {COM,                                                   
+     Objective}  => {FormLw}  0.02131783  0.9428571 19.72355
+76  {COM}        => {FormLw}  0.04198966  0.9285714 19.42471
+77  {FormLw}     => {COM}     0.04198966  0.8783784 19.42471
+78  {COM,                                                   
+     Subjective} => {FormLw}  0.02067183  0.9142857 19.12587
+79  {EnlTot,                                                
+     FormLw}     => {COM}     0.01485788  0.8518519 18.83810
+80  {FormLw,                                                
+     Objective}  => {COM}     0.02131783  0.8461538 18.71209
+81  {COM,                                                   
+     EnlTot}     => {FormLw}  0.01485788  0.8846154 18.50520
+82  {ABS,                                                   
+     Know}       => {Abs.}    0.01227390  1.0000000 18.21176
+83  {ABS,                                                   
+     EnlOth}     => {Abs.}    0.01485788  1.0000000 18.21176
+84  {ABS,                                                   
+     EnlTot}     => {Abs.}    0.01550388  1.0000000 18.21176
+85  {ABS,                                                   
+     Virtue}     => {Abs.}    0.01614987  1.0000000 18.21176
+86  {ABS,                                                   
+     Pstv}       => {Abs.}    0.02002584  1.0000000 18.21176
+87  {ABS,                                                   
+     Strong}     => {Abs.}    0.01744186  1.0000000 18.21176
+88  {ABS,                                                   
+     Positiv}    => {Abs.}    0.02131783  1.0000000 18.21176
+89  {ABS,                                                   
+     EnlOth,                                                
+     EnlTot}     => {Abs.}    0.01485788  1.0000000 18.21176
+90  {ABS,                                                   
+     Pstv,                                                  
+     Virtue}     => {Abs.}    0.01356589  1.0000000 18.21176
+91  {ABS,                                                   
+     Positiv,                                               
+     Virtue}     => {Abs.}    0.01485788  1.0000000 18.21176
+92  {ABS,                                                   
+     Pstv,                                                  
+     Strong}     => {Abs.}    0.01098191  1.0000000 18.21176
+93  {ABS,                                                   
+     Positiv,                                               
+     Pstv}       => {Abs.}    0.02002584  1.0000000 18.21176
+94  {ABS,                                                   
+     Objective,                                             
+     Pstv}       => {Abs.}    0.01162791  1.0000000 18.21176
+95  {ABS,                                                   
+     Positiv,                                               
+     Strong}     => {Abs.}    0.01227390  1.0000000 18.21176
+96  {ABS,                                                   
+     Objective,                                             
+     Positiv}    => {Abs.}    0.01227390  1.0000000 18.21176
+97  {ABS,                                                   
+     Positiv,                                               
+     Pstv,                                                  
+     Virtue}     => {Abs.}    0.01356589  1.0000000 18.21176
+98  {ABS,                                                   
+     Positiv,                                               
+     Pstv,                                                  
+     Strong}     => {Abs.}    0.01098191  1.0000000 18.21176
+99  {ABS,                                                   
+     Objective,                                             
+     Positiv,                                               
+     Pstv}       => {Abs.}    0.01162791  1.0000000 18.21176
+100 {EnlOth,                                                
+     FormLw}     => {COM}     0.01098191  0.8095238 17.90204

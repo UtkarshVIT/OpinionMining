@@ -1,0 +1,158 @@
+    lhs             rhs             support confidence       lift
+1   {}           => {Subjective} 0.50583431  0.5058343  1.0000000
+2   {Pstv}       => {Positiv}    0.13127188  1.0000000  4.6576087
+3   {Positiv}    => {Pstv}       0.13127188  0.6114130  4.6576087
+4   {Ngtv}       => {Negativ}    0.11435239  1.0000000  5.2576687
+5   {Negativ}    => {Ngtv}       0.11435239  0.6012270  5.2576687
+6   {Strong}     => {Subjective} 0.11085181  0.5205479  1.0290879
+7   {Positiv}    => {Subjective} 0.10851809  0.5054348  0.9992102
+8   {Negativ}    => {Subjective} 0.10443407  0.5490798  1.0854933
+9   {Active}     => {Subjective} 0.08051342  0.5149254  1.0179724
+10  {Vice}       => {Negativ}    0.07642940  0.9225352  4.8503845
+11  {Virtue}     => {Positiv}    0.07642940  0.8397436  3.9111970
+12  {EnlOth}     => {EnlTot}     0.07059510  1.0000000 11.5033557
+13  {EnlTot}     => {EnlOth}     0.07059510  0.8120805 11.5033557
+14  {PowTot}     => {Subjective} 0.07059510  0.5601852  1.1074480
+15  {IAV}        => {Active}     0.07001167  0.6486486  4.1484470
+16  {Pstv}       => {Objective}  0.06592765  0.5022222  1.0187087
+17  {Positiv,                                                    
+     Pstv}       => {Objective}  0.06592765  0.5022222  1.0187087
+18  {Objective,                                                  
+     Pstv}       => {Positiv}    0.06592765  1.0000000  4.6576087
+19  {Objective,                                                  
+     Positiv}    => {Pstv}       0.06592765  0.6208791  4.7297192
+20  {Pstv,                                                       
+     Subjective} => {Positiv}    0.06534422  1.0000000  4.6576087
+21  {Positiv,                                                    
+     Subjective} => {Pstv}       0.06534422  0.6021505  4.5870490
+22  {Ngtv}       => {Subjective} 0.06476079  0.5663265  1.1195890
+23  {Negativ,                                                    
+     Ngtv}       => {Subjective} 0.06476079  0.5663265  1.1195890
+24  {Ngtv,                                                       
+     Subjective} => {Negativ}    0.06476079  1.0000000  5.2576687
+25  {Negativ,                                                    
+     Subjective} => {Ngtv}       0.06476079  0.6201117  5.4228138
+26  {Virtue}     => {Pstv}       0.06359393  0.6987179  5.3226781
+27  {Pstv,                                                       
+     Virtue}     => {Positiv}    0.06359393  1.0000000  4.6576087
+28  {Positiv,                                                    
+     Virtue}     => {Pstv}       0.06359393  0.8320611  6.3384563
+29  {IAV}        => {Subjective} 0.05775963  0.5351351  1.0579257
+30  {Hostile}    => {Negativ}    0.05659277  0.9417476  4.9513967
+31  {Vice}       => {Ngtv}       0.05600933  0.6760563  5.9120437
+32  {Ovrst}      => {Objective}  0.05600933  0.5189189  1.0525764
+33  {Ngtv,                                                       
+     Vice}       => {Negativ}    0.05600933  1.0000000  5.2576687
+34  {Negativ,                                                    
+     Vice}       => {Ngtv}       0.05600933  0.7328244  6.4084748
+35  {Pstv,                                                       
+     Strong}     => {Positiv}    0.05542590  1.0000000  4.6576087
+36  {Positiv,                                                    
+     Strong}     => {Pstv}       0.05542590  0.7364341  5.6099914
+37  {Abs.}       => {ABS}        0.05192532  1.0000000 18.6304348
+38  {ABS}        => {Abs.}       0.05192532  0.9673913 18.6304348
+39  {Ngtv,                                                       
+     Objective}  => {Negativ}    0.04959160  1.0000000  5.2576687
+40  {Negativ,                                                    
+     Objective}  => {Ngtv}       0.04959160  0.5782313  5.0565736
+41  {Virtue}     => {Subjective} 0.04842474  0.5320513  1.0518292
+42  {Vice}       => {Subjective} 0.04667445  0.5633803  1.1137645
+43  {Passive}    => {Subjective} 0.04434072  0.5467626  1.0809124
+44  {EnlTot}     => {Subjective} 0.04375729  0.5033557  0.9951000
+45  {Negativ,                                                    
+     Vice}       => {Subjective} 0.04200700  0.5496183  1.0865580
+46  {Subjective,                                                 
+     Vice}       => {Negativ}    0.04200700  0.9000000  4.7319018
+47  {Affil}      => {Positiv}    0.04142357  0.7473684  3.4809497
+48  {Weak}       => {Subjective} 0.04142357  0.5590551  1.1052139
+49  {EVAL}       => {Positiv}    0.04084014  0.5468750  2.5471298
+50  {EVAL}       => {Subjective} 0.04084014  0.5468750  1.0811347
+51  {FormLw}     => {ComForm}    0.03967328  0.9066667 12.9502222
+52  {ComForm}    => {FormLw}     0.03967328  0.5666667 12.9502222
+53  {Weak}       => {Negativ}    0.03967328  0.5354331  2.8151297
+54  {EVAL}       => {Pstv}       0.03967328  0.5312500  4.0469444
+55  {EVAL,                                                       
+     Pstv}       => {Positiv}    0.03967328  1.0000000  4.6576087
+56  {EVAL,                                                       
+     Positiv}    => {Pstv}       0.03967328  0.9714286  7.4001270
+57  {Active,                                                     
+     Strong}     => {Subjective} 0.03967328  0.5528455  1.0929380
+58  {Positiv,                                                    
+     Virtue}     => {Subjective} 0.03908985  0.5114504  1.0111026
+59  {Subjective,                                                 
+     Virtue}     => {Positiv}    0.03908985  0.8072289  3.7597564
+60  {COM}        => {FormLw}     0.03850642  0.9295775 21.2439437
+61  {FormLw}     => {COM}        0.03850642  0.8800000 21.2439437
+62  {Positiv,                                                    
+     Strong}     => {Objective}  0.03792299  0.5038760  1.0220632
+63  {COM}        => {ComForm}    0.03733956  0.9014085 12.8751174
+64  {ComForm}    => {COM}        0.03733956  0.5333333 12.8751174
+65  {Objective,                                                  
+     Virtue}     => {Positiv}    0.03733956  0.8767123  4.0833830
+66  {Active,                                                     
+     IAV}        => {Subjective} 0.03733956  0.5333333  1.0543637
+67  {IAV,                                                        
+     Subjective} => {Active}     0.03733956  0.6464646  4.1344791
+68  {IndAdj}     => {Subjective} 0.03675613  0.5526316  1.0925150
+69  {Hostile}    => {Subjective} 0.03675613  0.6116505  1.2091914
+70  {COM,                                                        
+     FormLw}     => {ComForm}    0.03675613  0.9545455 13.6340909
+71  {COM,                                                        
+     ComForm}    => {FormLw}     0.03675613  0.9843750 22.4962500
+72  {ComForm,                                                    
+     FormLw}     => {COM}        0.03675613  0.9264706 22.3657829
+73  {IndAdj}     => {Negativ}    0.03558926  0.5350877  2.8133140
+74  {EnlOth}     => {Objective}  0.03558926  0.5041322  1.0225830
+75  {ComForm}    => {Objective}  0.03558926  0.5083333  1.0311045
+76  {EnlOth,                                                     
+     EnlTot}     => {Objective}  0.03558926  0.5041322  1.0225830
+77  {EnlOth,                                                     
+     Objective}  => {EnlTot}     0.03558926  1.0000000 11.5033557
+78  {EnlTot,                                                     
+     Objective}  => {EnlOth}     0.03558926  0.8243243 11.6767925
+79  {TimeSpc}    => {Objective}  0.03500583  0.5607477  1.1374219
+80  {Hostile}    => {Ngtv}       0.03500583  0.5825243  5.0941153
+81  {EnlOth,                                                     
+     Subjective} => {EnlTot}     0.03500583  1.0000000 11.5033557
+82  {EnlTot,                                                     
+     Subjective} => {EnlOth}     0.03500583  0.8000000 11.3322314
+83  {Hostile,                                                    
+     Ngtv}       => {Negativ}    0.03500583  1.0000000  5.2576687
+84  {Hostile,                                                    
+     Negativ}    => {Ngtv}       0.03500583  0.6185567  5.4092152
+85  {Hostile,                                                    
+     Negativ}    => {Subjective} 0.03442240  0.6082474  1.2024638
+86  {Hostile,                                                    
+     Subjective} => {Negativ}    0.03442240  0.9365079  4.9238485
+87  {Objective,                                                  
+     Vice}       => {Negativ}    0.03442240  0.9516129  5.0032654
+88  {Pstv,                                                       
+     Virtue}     => {Objective}  0.03267211  0.5137615  1.0421150
+89  {Objective,                                                  
+     Virtue}     => {Pstv}       0.03267211  0.7671233  5.8437747
+90  {IAV,                                                        
+     Objective}  => {Active}     0.03267211  0.6511628  4.1645262
+91  {Positiv,                                                    
+     Pstv,                                                       
+     Virtue}     => {Objective}  0.03267211  0.5137615  1.0421150
+92  {Objective,                                                  
+     Pstv,                                                       
+     Virtue}     => {Positiv}    0.03267211  1.0000000  4.6576087
+93  {Objective,                                                  
+     Positiv,                                                    
+     Virtue}     => {Pstv}       0.03267211  0.8750000  6.6655556
+94  {Strong,                                                     
+     Virtue}     => {Positiv}    0.03208868  0.7534247  3.5091572
+95  {EVAL,                                                       
+     Virtue}     => {Positiv}    0.03092182  0.9636364  4.4882411
+96  {EVAL,                                                       
+     Positiv}    => {Virtue}     0.03092182  0.7571429  8.3188645
+97  {Subjective,                                                 
+     Virtue}     => {Pstv}       0.03092182  0.6385542  4.8643641
+98  {Pstv,                                                       
+     Subjective,                                                 
+     Virtue}     => {Positiv}    0.03092182  1.0000000  4.6576087
+99  {Positiv,                                                    
+     Subjective,                                                 
+     Virtue}     => {Pstv}       0.03092182  0.7910448  6.0260033
+100 {PowOth}     => {PowTot}     0.03033839  1.0000000  7.9351852

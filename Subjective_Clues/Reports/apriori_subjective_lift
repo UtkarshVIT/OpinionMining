@@ -1,0 +1,114 @@
+   lhs          rhs          support confidence     lift
+1  {COM,                                                
+    Object}  => {ComnObj} 0.01200300  1.0000000 78.41176
+2  {AffOth}  => {AffTot}  0.01125281  1.0000000 57.95652
+3  {AffTot}  => {AffOth}  0.01125281  0.6521739 57.95652
+4  {Positiv,                                            
+    RspTot}  => {RspOth}  0.01200300  1.0000000 43.00000
+5  {RspOth}  => {RspTot}  0.02325581  1.0000000 39.20588
+6  {RspTot}  => {RspOth}  0.02325581  0.9117647 39.20588
+7  {Positiv,                                            
+    RspOth}  => {RspTot}  0.01200300  1.0000000 39.20588
+8  {ABS,                                                
+    Time.,                                              
+    TimeSpc} => {TIME}    0.02175544  1.0000000 39.20588
+9  {EMOT,                                               
+    Negativ} => {Pain}    0.01275319  0.6800000 37.76833
+10 {ABS,                                                
+    TimeSpc} => {TIME}    0.02175544  0.9354839 36.67647
+11 {SklOth}  => {SklTOT}  0.01725431  1.0000000 36.02703
+12 {SklTOT}  => {SklOth}  0.01725431  0.6216216 36.02703
+13 {ABS,                                                
+    Time.}   => {TIME}    0.02400600  0.9142857 35.84538
+14 {Active,                                             
+    Hostile,                                            
+    PowTot}  => {PowCon}  0.01050263  0.8750000 35.34470
+15 {RcEthic} => {RcTot}   0.02175544  1.0000000 31.73810
+16 {RcTot}   => {RcEthic} 0.02175544  0.6904762 31.73810
+17 {Hostile,                                            
+    PowTot}  => {PowCon}  0.01800450  0.7741935 31.27273
+18 {Hostile,                                            
+    Ngtv,                                               
+    PowTot}  => {PowCon}  0.01200300  0.7619048 30.77633
+19 {Hostile,                                            
+    Negativ,                                            
+    Ngtv,                                               
+    PowTot}  => {PowCon}  0.01200300  0.7619048 30.77633
+20 {Hostile,                                            
+    Negativ,                                            
+    PowTot}  => {PowCon}  0.01425356  0.7600000 30.69939
+21 {Ngtv,                                               
+    PowTot}  => {PowCon}  0.01425356  0.7307692 29.51865
+22 {Negativ,                                            
+    Ngtv,                                               
+    PowTot}  => {PowCon}  0.01425356  0.7307692 29.51865
+23 {Negativ,                                            
+    PowTot}  => {PowCon}  0.01725431  0.7187500 29.03314
+24 {HU,                                                 
+    POLIT,                                              
+    Power,                                              
+    PowTot,                                             
+    Strong}  => {PowAuPt} 0.01200300  0.7272727 28.51337
+25 {Time.,                                              
+    TimeSpc} => {TIME}    0.02175544  0.7073171 27.73099
+26 {HU,                                                 
+    POLIT,                                              
+    Power,                                              
+    PowTot}  => {PowAuPt} 0.01425356  0.7037037 27.58932
+27 {HU,                                                 
+    Power,                                              
+    PowTot,                                             
+    Strong}  => {PowAuPt} 0.01275319  0.6800000 26.66000
+28 {COM,                                                
+    ComForm} => {FormLw}  0.03150788  0.9545455 26.50852
+29 {HU,                                                 
+    Power,                                              
+    PowTot}  => {PowAuPt} 0.01500375  0.6666667 26.13725
+30 {COM,                                                
+    ComForm,                                            
+    EnlTot}  => {FormLw}  0.01125281  0.9375000 26.03516
+31 {HU,                                                 
+    POLIT,                                              
+    Power,                                              
+    Strong}  => {PowAuPt} 0.01200300  0.6400000 25.09176
+32 {HU,                                                 
+    POLIT,                                              
+    PowTot,                                             
+    Strong}  => {PowAuPt} 0.01200300  0.6400000 25.09176
+33 {Region}  => {PLACE}   0.01125281  1.0000000 24.68519
+34 {Social}  => {PLACE}   0.01425356  1.0000000 24.68519
+35 {POLIT,                                              
+    PowTot,                                             
+    Role}    => {PowAuPt} 0.01200300  0.6153846 24.12670
+36 {HU,                                                 
+    POLIT,                                              
+    PowTot,                                             
+    Role}    => {PowAuPt} 0.01200300  0.6153846 24.12670
+37 {HU,                                                 
+    POLIT,                                              
+    Power}   => {PowAuPt} 0.01425356  0.6129032 24.02941
+38 {TIME,                                               
+    TimeSpc} => {Time.}   0.02175544  1.0000000 23.80357
+39 {ABS,                                                
+    TIME,                                               
+    TimeSpc} => {Time.}   0.02175544  1.0000000 23.80357
+40 {WltOth}  => {WltTot}  0.03450863  1.0000000 23.38596
+41 {WltTot}  => {WltOth}  0.03450863  0.8070175 23.38596
+42 {Econ.,                                              
+    WltOth}  => {WltTot}  0.02175544  1.0000000 23.38596
+43 {ECON,                                               
+    WltOth}  => {WltTot}  0.02100525  1.0000000 23.38596
+44 {Econ.,                                              
+    ECON,                                               
+    WltOth}  => {WltTot}  0.01800450  1.0000000 23.38596
+45 {ABS,                                                
+    TIME}    => {Time.}   0.02400600  0.9696970 23.08225
+46 {ECON,                                               
+    WltTot}  => {WltOth}  0.02100525  0.7777778 22.53865
+47 {TIME}    => {Time.}   0.02400600  0.9411765 22.40336
+48 {Time.}   => {TIME}    0.02400600  0.5714286 22.40336
+49 {HU,                                                 
+    POLIT,                                              
+    Strong}  => {PowAuPt} 0.01200300  0.5714286 22.40336
+50 {Negativ,                                            
+    Pain}    => {EMOT}    0.01275319  0.7391304 22.39229

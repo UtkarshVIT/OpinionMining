@@ -1,0 +1,178 @@
+1   {CARD}       => {NUMB}    0.01108518          1 77.909091
+2   {CARD}       => {Quan}    0.01108518          1 20.404762
+3   {PowAren}    => {PowTot}  0.01516919          1  7.935185
+4   {EnlGain}    => {EnlTot}  0.01225204          1 11.503356
+5   {AffOth}     => {AffTot}  0.01108518          1 81.619048
+6   {PowLoss}    => {PowTot}  0.01050175          1  7.935185
+7   {Name}       => {ECON}    0.01983664          1 26.781250
+8   {Name}       => {POLIT}   0.01983664          1 21.696203
+9   {PowCoop}    => {PowTot}  0.01691949          1  7.935185
+10  {SklTOT}     => {SklOth}  0.01691949          1 59.103448
+11  {SklOth}     => {SklTOT}  0.01691949          1 59.103448
+12  {Pleasur}    => {Positiv} 0.01925321          1  4.657609
+13  {RcEthic}    => {RcTot}   0.02042007          1 38.088889
+14  {WlbPsyc}    => {WlbTot}  0.02217036          1 18.430108
+15  {PowOth}     => {PowTot}  0.03033839          1  7.935185
+16  {PowCon}     => {PowTot}  0.02392065          1  7.935185
+17  {WlbPhys}    => {WlbTot}  0.02917153          1 18.430108
+18  {RspOth}     => {RspTot}  0.02508751          1 36.468085
+19  {Abs.}       => {ABS}     0.05192532          1 18.630435
+20  {EnlOth}     => {EnlTot}  0.07059510          1 11.503356
+21  {Ngtv}       => {Negativ} 0.11435239          1  5.257669
+22  {Pstv}       => {Positiv} 0.13127188          1  4.657609
+23  {CARD,                                                   
+     NUMB}       => {Quan}    0.01108518          1 20.404762
+24  {CARD,                                                   
+     Quan}       => {NUMB}    0.01108518          1 77.909091
+25  {NUMB,                                                   
+     Quan}       => {CARD}    0.01108518          1 90.210526
+26  {PosAff,                                                 
+     Pstv}       => {Positiv} 0.01050175          1  4.657609
+27  {NegAff,                                                 
+     Vice}       => {Ngtv}    0.01166861          1  8.744898
+28  {NegAff,                                                 
+     Vice}       => {Negativ} 0.01166861          1  5.257669
+29  {NegAff,                                                 
+     Ngtv}       => {Negativ} 0.01225204          1  5.257669
+30  {NegAff,                                                 
+     Negativ}    => {Ngtv}    0.01225204          1  8.744898
+31  {ECON,                                                   
+     Name}       => {POLIT}   0.01983664          1 21.696203
+32  {Name,                                                   
+     POLIT}      => {ECON}    0.01983664          1 26.781250
+33  {Name,                                                   
+     PowTot}     => {ECON}    0.01166861          1 26.781250
+34  {Name,                                                   
+     Objective}  => {ECON}    0.01050175          1 26.781250
+35  {Name,                                                   
+     PowTot}     => {POLIT}   0.01166861          1 21.696203
+36  {Name,                                                   
+     Objective}  => {POLIT}   0.01050175          1 21.696203
+37  {Pleasur,                                                
+     Pstv}       => {Positiv} 0.01283547          1  4.657609
+38  {Pleasur,                                                
+     Subjective} => {Positiv} 0.01166861          1  4.657609
+39  {RcEthic,                                                
+     Subjective} => {RcTot}   0.01166861          1 38.088889
+40  {Strong,                                                 
+     SureLw}     => {Ovrst}   0.01108518          1  9.264865
+41  {EMOT,                                                   
+     WlbPsyc}    => {WlbTot}  0.01400233          1 18.430108
+42  {Ngtv,                                                   
+     WlbPsyc}    => {WlbTot}  0.01166861          1 18.430108
+43  {Negativ,                                                
+     WlbPsyc}    => {WlbTot}  0.01341890          1 18.430108
+44  {Objective,                                              
+     WlbPsyc}    => {WlbTot}  0.01050175          1 18.430108
+45  {Subjective,                                             
+     WlbPsyc}    => {WlbTot}  0.01166861          1 18.430108
+46  {Ngtv,                                                   
+     WlbPsyc}    => {Negativ} 0.01166861          1  5.257669
+47  {Objective,                                              
+     PowOth}     => {PowTot}  0.01400233          1  7.935185
+48  {PowOth,                                                 
+     Subjective} => {PowTot}  0.01633606          1  7.935185
+49  {Hostile,                                                
+     PowCon}     => {PowTot}  0.01458576          1  7.935185
+50  {Ngtv,                                                   
+     PowCon}     => {PowTot}  0.01400233          1  7.935185
+51  {Active,                                                 
+     PowCon}     => {PowTot}  0.01225204          1  7.935185
+52  {Negativ,                                                
+     PowCon}     => {PowTot}  0.01458576          1  7.935185
+53  {Objective,                                              
+     PowCon}     => {PowTot}  0.01108518          1  7.935185
+54  {PowCon,                                                 
+     Subjective} => {PowTot}  0.01283547          1  7.935185
+55  {Ngtv,                                                   
+     PowCon}     => {Negativ} 0.01400233          1  5.257669
+56  {Ngtv,                                                   
+     WlbPhys}    => {WlbTot}  0.01225204          1 18.430108
+57  {Negativ,                                                
+     WlbPhys}    => {WlbTot}  0.01225204          1 18.430108
+58  {Objective,                                              
+     WlbPhys}    => {WlbTot}  0.01341890          1 18.430108
+59  {Subjective,                                             
+     WlbPhys}    => {WlbTot}  0.01575263          1 18.430108
+60  {Ngtv,                                                   
+     WlbPhys}    => {Negativ} 0.01225204          1  5.257669
+61  {Negativ,                                                
+     WlbPhys}    => {Ngtv}    0.01225204          1  8.744898
+62  {Pstv,                                                   
+     RspOth}     => {RspTot}  0.01341890          1 36.468085
+63  {Pstv,                                                   
+     RspTot}     => {RspOth}  0.01341890          1 39.860465
+64  {Positiv,                                                
+     RspOth}     => {RspTot}  0.01750292          1 36.468085
+65  {Positiv,                                                
+     RspTot}     => {RspOth}  0.01750292          1 39.860465
+66  {Objective,                                              
+     RspOth}     => {RspTot}  0.01225204          1 36.468085
+67  {RspOth,                                                 
+     Subjective} => {RspTot}  0.01283547          1 36.468085
+68  {Pstv,                                                   
+     RspOth}     => {Positiv} 0.01341890          1  4.657609
+69  {EMOT,                                                   
+     Pain}       => {Negativ} 0.01866978          1  5.257669
+70  {Pain,                                                   
+     WlbTot}     => {Negativ} 0.01225204          1  5.257669
+71  {Ngtv,                                                   
+     Pain}       => {Negativ} 0.01691949          1  5.257669
+72  {Objective,                                              
+     Pain}       => {Negativ} 0.01283547          1  5.257669
+73  {Pstv,                                                   
+     RspTot}     => {Positiv} 0.01341890          1  4.657609
+74  {ECON,                                                   
+     PowTot}     => {POLIT}   0.01516919          1 21.696203
+75  {Ngtv,                                                   
+     Undrst}     => {Negativ} 0.01166861          1  5.257669
+76  {Negate,                                                 
+     Ngtv}       => {Negativ} 0.01516919          1  5.257669
+77  {EndsLw,                                                 
+     Pstv}       => {Positiv} 0.01633606          1  4.657609
+78  {Abs.,                                                   
+     Know}       => {ABS}     0.01108518          1 18.630435
+79  {ABS,                                                    
+     Know}       => {Abs.}    0.01108518          1 19.258427
+80  {EnlOth,                                                 
+     Know}       => {EnlTot}  0.01866978          1 11.503356
+81  {COM,                                                    
+     EnlOth}     => {EnlTot}  0.01166861          1 11.503356
+82  {EnlOth,                                                 
+     FormLw}     => {EnlTot}  0.01225204          1 11.503356
+83  {Power,                                                  
+     Pstv}       => {Positiv} 0.01108518          1  4.657609
+84  {EMOT,                                                   
+     Ngtv}       => {Negativ} 0.01691949          1  5.257669
+85  {EMOT,                                                   
+     Pstv}       => {Positiv} 0.01341890          1  4.657609
+86  {Ngtv,                                                   
+     WlbTot}     => {Negativ} 0.02450408          1  5.257669
+87  {Abs.,                                                   
+     EnlOth}     => {ABS}     0.01341890          1 18.630435
+88  {ABS,                                                    
+     EnlOth}     => {Abs.}    0.01341890          1 19.258427
+89  {Abs.,                                                   
+     EnlTot}     => {ABS}     0.01400233          1 18.630435
+90  {ABS,                                                    
+     EnlTot}     => {Abs.}    0.01400233          1 19.258427
+91  {Abs.,                                                   
+     Virtue}     => {ABS}     0.01516919          1 18.630435
+92  {ABS,                                                    
+     Virtue}     => {Abs.}    0.01516919          1 19.258427
+93  {Abs.,                                                   
+     Pstv}       => {ABS}     0.01983664          1 18.630435
+94  {ABS,                                                    
+     Pstv}       => {Abs.}    0.01983664          1 19.258427
+95  {Abs.,                                                   
+     Strong}     => {ABS}     0.01633606          1 18.630435
+96  {ABS,                                                    
+     Strong}     => {Abs.}    0.01633606          1 19.258427
+97  {Abs.,                                                   
+     Positiv}    => {ABS}     0.02100350          1 18.630435
+98  {ABS,                                                    
+     Positiv}    => {Abs.}    0.02100350          1 19.258427
+99  {Abs.,                                                   
+     Objective}  => {ABS}     0.02625438          1 18.630435
+100 {Abs.,                                                   
+     Subjective} => {ABS}     0.02567095          1 18.630435

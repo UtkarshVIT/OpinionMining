@@ -1,0 +1,124 @@
+   lhs             rhs          support confidence     lift
+1  {EnlTot,                                                
+    Role}       => {EnlPt}   0.01019160  1.0000000 74.33333
+2  {EnlTot,                                                
+    HU,                                                    
+    Role}       => {EnlPt}   0.01019160  1.0000000 74.33333
+3  {EnlTot,                                                
+    HU}         => {EnlPt}   0.01019160  0.9259259 68.82716
+4  {RspOth}     => {RspTot}  0.01508357  1.0000000 59.82927
+5  {RspTot}     => {RspOth}  0.01508357  0.9024390 59.82927
+6  {COM,                                                   
+    Object}     => {ComnObj} 0.01630656  0.9302326 53.06652
+7  {SklOth}     => {SklTOT}  0.01426824  1.0000000 40.88333
+8  {SklTOT}     => {SklOth}  0.01426824  0.5833333 40.88333
+9  {RcEthic}    => {RcTot}   0.01426824  1.0000000 38.93651
+10 {RcTot}      => {RcEthic} 0.01426824  0.5555556 38.93651
+11 {EMOT,                                                  
+    Negativ}    => {Pain}    0.01304525  0.7272727 38.78261
+12 {ABS,                                                   
+    Time.,                                                 
+    TimeSpc}    => {TIME}    0.02568284  1.0000000 33.14865
+13 {ABS,                                                   
+    Subjective,                                            
+    Time.,                                                 
+    TimeSpc}    => {TIME}    0.01182226  1.0000000 33.14865
+14 {ABS,                                                   
+    Objective,                                             
+    Time.,                                                 
+    TimeSpc}    => {TIME}    0.01386058  1.0000000 33.14865
+15 {ABS,                                                   
+    Objective,                                             
+    Time.}      => {TIME}    0.01549124  0.9743590 32.29868
+16 {ABS,                                                   
+    Time.}      => {TIME}    0.02853649  0.9589041 31.78638
+17 {Negativ,                                               
+    Pain}       => {EMOT}    0.01304525  0.7111111 31.71556
+18 {ABS,                                                   
+    Objective,                                             
+    TimeSpc}    => {TIME}    0.01386058  0.9444444 31.30706
+19 {ABS,                                                   
+    Subjective,                                            
+    Time.}      => {TIME}    0.01304525  0.9411765 31.19873
+20 {ABS,                                                   
+    TimeSpc}    => {TIME}    0.02568284  0.9402985 31.16962
+21 {Pain}       => {EMOT}    0.01304525  0.6956522 31.02609
+22 {EMOT}       => {Pain}    0.01304525  0.5818182 31.02609
+23 {ABS,                                                   
+    Subjective,                                            
+    TimeSpc}    => {TIME}    0.01182226  0.9354839 31.01003
+24 {Hostile,                                               
+    PowTot}     => {PowCon}  0.01671423  0.7592593 29.56290
+25 {Hostile,                                               
+    Ngtv,                                                  
+    PowTot}     => {PowCon}  0.01059927  0.7428571 28.92426
+26 {Hostile,                                               
+    Negativ,                                               
+    Ngtv,                                                  
+    PowTot}     => {PowCon}  0.01059927  0.7428571 28.92426
+27 {Hostile,                                               
+    Negativ,                                               
+    PowTot}     => {PowCon}  0.01304525  0.7272727 28.31746
+28 {HU,                                                    
+    POLIT,                                                 
+    Power,                                                 
+    PowTot,                                                
+    Strong}     => {PowAuPt} 0.01263759  0.7560976 27.27511
+29 {HU,                                                    
+    POLIT,                                                 
+    Power,                                                 
+    PowTot}     => {PowAuPt} 0.01589890  0.7500000 27.05515
+30 {Ngtv,                                                  
+    PowTot}     => {PowCon}  0.01304525  0.6666667 25.95767
+31 {Negativ,                                               
+    Ngtv,                                                  
+    PowTot}     => {PowCon}  0.01304525  0.6666667 25.95767
+32 {HU,                                                    
+    Power,                                                 
+    PowTot}     => {PowAuPt} 0.01671423  0.7192982 25.94763
+33 {HU,                                                    
+    Power,                                                 
+    PowTot,                                                
+    Strong}     => {PowAuPt} 0.01345291  0.7173913 25.87884
+34 {Negativ,                                               
+    PowTot}     => {PowCon}  0.01671423  0.6612903 25.74834
+35 {Subjective,                                            
+    WlbTot}     => {WlbPhys} 0.01141459  0.5490196 24.93972
+36 {HU,                                                    
+    POLIT,                                                 
+    PowTot,                                                
+    Strong}     => {PowAuPt} 0.01263759  0.6888889 24.85065
+37 {WlbPsyc}    => {WlbTot}  0.01345291  1.0000000 24.53000
+38 {Subjective,                                            
+    WlbPhys}    => {WlbTot}  0.01141459  1.0000000 24.53000
+39 {WlbPhys}    => {WlbTot}  0.02160620  0.9814815 24.07574
+40 {WlbTot}     => {WlbPhys} 0.02160620  0.5300000 24.07574
+41 {COM,                                                   
+    ComForm,                                               
+    Subjective} => {FormLw}  0.01589890  0.9750000 23.91675
+42 {COM,                                                   
+    ComForm}    => {FormLw}  0.03424378  0.9655172 23.68414
+43 {Objective,                                             
+    WlbPhys}    => {WlbTot}  0.01019160  0.9615385 23.58654
+44 {COM,                                                   
+    ComForm,                                               
+    Objective}  => {FormLw}  0.01834488  0.9574468 23.48617
+45 {Subjective,                                            
+    Time.,                                                 
+    TimeSpc}    => {TIME}    0.01182226  0.7073171 23.44661
+46 {POLIT,                                                 
+    PowTot,                                                
+    Role}       => {PowAuPt} 0.01263759  0.6458333 23.29749
+47 {HU,                                                    
+    POLIT,                                                 
+    Power,                                                 
+    Strong}     => {PowAuPt} 0.01263759  0.6458333 23.29749
+48 {HU,                                                    
+    POLIT,                                                 
+    PowTot,                                                
+    Role}       => {PowAuPt} 0.01263759  0.6458333 23.29749
+49 {Objective,                                             
+    WlbTot}     => {WlbPhys} 0.01019160  0.5102041 23.17649
+50 {COM,                                                   
+    ComForm,                                               
+    EnlTot}     => {FormLw}  0.01222992  0.9375000 22.99687

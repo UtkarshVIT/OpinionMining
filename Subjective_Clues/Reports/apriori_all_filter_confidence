@@ -1,0 +1,184 @@
+    lhs             rhs          support confidence      lift
+1   {EnlGain}    => {EnlTot}  0.01356589          1 10.459459
+2   {AffOth}     => {AffTot}  0.01227390          1 73.714286
+3   {PowLoss}    => {PowTot}  0.01162791          1  8.190476
+4   {PowCoop}    => {PowTot}  0.01873385          1  8.190476
+5   {SklOth}     => {SklTOT}  0.01873385          1 53.379310
+6   {SklTOT}     => {SklOth}  0.01873385          1 53.379310
+7   {Pleasur}    => {Positiv} 0.02131783          1  4.336134
+8   {RcEthic}    => {RcTot}   0.02260982          1 34.400000
+9   {PowOth}     => {PowTot}  0.02971576          1  8.190476
+10  {WlbPsyc}    => {WlbTot}  0.02454780          1 16.645161
+11  {PowCon}     => {PowTot}  0.02648579          1  8.190476
+12  {WlbPhys}    => {WlbTot}  0.03229974          1 16.645161
+13  {RspOth}     => {RspTot}  0.02777778          1 32.936170
+14  {Abs.}       => {ABS}     0.05490956          1 17.590909
+15  {EnlOth}     => {EnlTot}  0.07751938          1 10.459459
+16  {Ngtv}       => {Negativ} 0.12338501          1  4.822430
+17  {Pstv}       => {Positiv} 0.13953488          1  4.336134
+18  {PosAff,                                                 
+     Pstv}       => {Positiv} 0.01162791          1  4.336134
+19  {NegAff,                                                 
+     Vice}       => {Ngtv}    0.01291990          1  8.104712
+20  {NegAff,                                                 
+     Vice}       => {Negativ} 0.01291990          1  4.822430
+21  {NegAff,                                                 
+     Ngtv}       => {Negativ} 0.01356589          1  4.822430
+22  {NegAff,                                                 
+     Negativ}    => {Ngtv}    0.01356589          1  8.104712
+23  {Positiv,                                                
+     PowCoop}    => {PowTot}  0.01098191          1  8.190476
+24  {EMOT,                                                   
+     Pleasur}    => {Positiv} 0.01098191          1  4.336134
+25  {Pleasur,                                                
+     Pstv}       => {Positiv} 0.01421189          1  4.336134
+26  {Pleasur,                                                
+     Subjective} => {Positiv} 0.01291990          1  4.336134
+27  {RcEthic,                                                
+     Subjective} => {RcTot}   0.01291990          1 34.400000
+28  {EnlOth,                                                 
+     Perceiv}    => {EnlTot}  0.01033592          1 10.459459
+29  {Objective,                                              
+     PowOth}     => {PowTot}  0.01291990          1  8.190476
+30  {PowOth,                                                 
+     Subjective} => {PowTot}  0.01679587          1  8.190476
+31  {Pain,                                                   
+     WlbPsyc}    => {WlbTot}  0.01098191          1 16.645161
+32  {Pain,                                                   
+     WlbPsyc}    => {Negativ} 0.01098191          1  4.822430
+33  {EMOT,                                                   
+     WlbPsyc}    => {WlbTot}  0.01550388          1 16.645161
+34  {Passive,                                                
+     WlbPsyc}    => {WlbTot}  0.01033592          1 16.645161
+35  {Ngtv,                                                   
+     WlbPsyc}    => {WlbTot}  0.01291990          1 16.645161
+36  {Negativ,                                                
+     WlbPsyc}    => {WlbTot}  0.01485788          1 16.645161
+37  {Objective,                                              
+     WlbPsyc}    => {WlbTot}  0.01162791          1 16.645161
+38  {Subjective,                                             
+     WlbPsyc}    => {WlbTot}  0.01291990          1 16.645161
+39  {Ngtv,                                                   
+     WlbPsyc}    => {Negativ} 0.01291990          1  4.822430
+40  {Hostile,                                                
+     PowCon}     => {PowTot}  0.01614987          1  8.190476
+41  {Ngtv,                                                   
+     PowCon}     => {PowTot}  0.01550388          1  8.190476
+42  {Active,                                                 
+     PowCon}     => {PowTot}  0.01356589          1  8.190476
+43  {Negativ,                                                
+     PowCon}     => {PowTot}  0.01614987          1  8.190476
+44  {PowCon,                                                 
+     Strong}     => {PowTot}  0.01033592          1  8.190476
+45  {Objective,                                              
+     PowCon}     => {PowTot}  0.01227390          1  8.190476
+46  {PowCon,                                                 
+     Subjective} => {PowTot}  0.01421189          1  8.190476
+47  {Ngtv,                                                   
+     PowCon}     => {Negativ} 0.01550388          1  4.822430
+48  {PowCon,                                                 
+     Strong}     => {Active}  0.01033592          1  5.863636
+49  {Ngtv,                                                   
+     WlbPhys}    => {WlbTot}  0.01356589          1 16.645161
+50  {Negativ,                                                
+     WlbPhys}    => {WlbTot}  0.01356589          1 16.645161
+51  {Objective,                                              
+     WlbPhys}    => {WlbTot}  0.01485788          1 16.645161
+52  {Subjective,                                             
+     WlbPhys}    => {WlbTot}  0.01744186          1 16.645161
+53  {Ngtv,                                                   
+     WlbPhys}    => {Negativ} 0.01356589          1  4.822430
+54  {Negativ,                                                
+     WlbPhys}    => {Ngtv}    0.01356589          1  8.104712
+55  {Pstv,                                                   
+     RspOth}     => {RspTot}  0.01485788          1 32.936170
+56  {Pstv,                                                   
+     RspTot}     => {RspOth}  0.01485788          1 36.000000
+57  {Positiv,                                                
+     RspOth}     => {RspTot}  0.01937984          1 32.936170
+58  {Positiv,                                                
+     RspTot}     => {RspOth}  0.01937984          1 36.000000
+59  {Objective,                                              
+     RspOth}     => {RspTot}  0.01356589          1 32.936170
+60  {RspOth,                                                 
+     Subjective} => {RspTot}  0.01421189          1 32.936170
+61  {Pstv,                                                   
+     RspOth}     => {Positiv} 0.01485788          1  4.336134
+62  {EMOT,                                                   
+     Pain}       => {Negativ} 0.02067183          1  4.822430
+63  {Pain,                                                   
+     WlbTot}     => {Negativ} 0.01356589          1  4.822430
+64  {Pain,                                                   
+     Passive}    => {Negativ} 0.01098191          1  4.822430
+65  {Ngtv,                                                   
+     Pain}       => {Negativ} 0.01873385          1  4.822430
+66  {Objective,                                              
+     Pain}       => {Negativ} 0.01421189          1  4.822430
+67  {Ngtv,                                                   
+     Undrst}     => {Negativ} 0.01291990          1  4.822430
+68  {Pstv,                                                   
+     RspTot}     => {Positiv} 0.01485788          1  4.336134
+69  {EndsLw,                                                 
+     Pstv}       => {Positiv} 0.01550388          1  4.336134
+70  {Negate,                                                 
+     Ngtv}       => {Negativ} 0.01614987          1  4.822430
+71  {COM,                                                    
+     EnlOth}     => {EnlTot}  0.01291990          1 10.459459
+72  {Abs.,                                                   
+     Know}       => {ABS}     0.01227390          1 17.590909
+73  {ABS,                                                    
+     Know}       => {Abs.}    0.01227390          1 18.211765
+74  {EnlOth,                                                 
+     Know}       => {EnlTot}  0.02067183          1 10.459459
+75  {EnlOth,                                                 
+     FormLw}     => {EnlTot}  0.01356589          1 10.459459
+76  {Ngtv,                                                   
+     SocRel}     => {Hostile} 0.01098191          1 15.029126
+77  {Ngtv,                                                   
+     SocRel}     => {Negativ} 0.01098191          1  4.822430
+78  {Power,                                                  
+     Pstv}       => {Positiv} 0.01227390          1  4.336134
+79  {EMOT,                                                   
+     Hostile}    => {Negativ} 0.01033592          1  4.822430
+80  {EMOT,                                                   
+     Ngtv}       => {Negativ} 0.01873385          1  4.822430
+81  {EMOT,                                                   
+     Pstv}       => {Positiv} 0.01485788          1  4.336134
+82  {Abs.,                                                   
+     EnlOth}     => {ABS}     0.01485788          1 17.590909
+83  {ABS,                                                    
+     EnlOth}     => {Abs.}    0.01485788          1 18.211765
+84  {Abs.,                                                   
+     EnlTot}     => {ABS}     0.01550388          1 17.590909
+85  {ABS,                                                    
+     EnlTot}     => {Abs.}    0.01550388          1 18.211765
+86  {Abs.,                                                   
+     Virtue}     => {ABS}     0.01614987          1 17.590909
+87  {ABS,                                                    
+     Virtue}     => {Abs.}    0.01614987          1 18.211765
+88  {Abs.,                                                   
+     Pstv}       => {ABS}     0.02002584          1 17.590909
+89  {ABS,                                                    
+     Pstv}       => {Abs.}    0.02002584          1 18.211765
+90  {Abs.,                                                   
+     Strong}     => {ABS}     0.01744186          1 17.590909
+91  {ABS,                                                    
+     Strong}     => {Abs.}    0.01744186          1 18.211765
+92  {Abs.,                                                   
+     Positiv}    => {ABS}     0.02131783          1 17.590909
+93  {ABS,                                                    
+     Positiv}    => {Abs.}    0.02131783          1 18.211765
+94  {Abs.,                                                   
+     Objective}  => {ABS}     0.02777778          1 17.590909
+95  {Abs.,                                                   
+     Subjective} => {ABS}     0.02713178          1 17.590909
+96  {Abs.,                                                   
+     EnlOth}     => {EnlTot}  0.01485788          1 10.459459
+97  {Abs.,                                                   
+     Pstv}       => {Positiv} 0.02002584          1  4.336134
+98  {Ngtv,                                                   
+     WlbTot}     => {Negativ} 0.02713178          1  4.822430
+99  {Pstv,                                                   
+     WlbTot}     => {Positiv} 0.01033592          1  4.336134
+100 {Positiv,                                                
+     WlbTot}     => {Pstv}    0.01033592          1  7.166667

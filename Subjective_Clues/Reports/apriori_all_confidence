@@ -1,0 +1,77 @@
+   lhs             rhs          support confidence      lift
+1  {Region}     => {PLACE}   0.01263759          1 19.782258
+2  {EnlGain}    => {EnlTot}  0.01100693          1 11.409302
+3  {PowCoop}    => {PowTot}  0.01182226          1  6.178841
+4  {Name}       => {POLIT}   0.01467591          1  8.547038
+5  {MALE}       => {Role}    0.01059927          1 12.451777
+6  {MALE}       => {HU}      0.01059927          1  8.855596
+7  {SklOth}     => {SklTOT}  0.01426824          1 40.883333
+8  {EnlPt}      => {EnlTot}  0.01345291          1 11.409302
+9  {RcEthic}    => {RcTot}   0.01426824          1 38.936508
+10 {RspOth}     => {RspTot}  0.01508357          1 59.829268
+11 {PowAren}    => {PowTot}  0.01752956          1  6.178841
+12 {Social}     => {PLACE}   0.01834488          1 19.782258
+13 {PowPt}      => {PowTot}  0.01345291          1  6.178841
+14 {WlbPsyc}    => {WlbTot}  0.01345291          1 24.530000
+15 {Tool}       => {Object}  0.02609050          1 12.776042
+16 {ComnObj}    => {Object}  0.01752956          1 12.776042
+17 {Abs.}       => {ABS}     0.03016714          1 16.463087
+18 {PowCon}     => {PowTot}  0.02568284          1  6.178841
+19 {PowAuPt}    => {PowTot}  0.02772116          1  6.178841
+20 {WltOth}     => {WltTot}  0.03832042          1 20.965812
+21 {PowOth}     => {PowTot}  0.03709743          1  6.178841
+22 {EnlOth}     => {EnlTot}  0.06114961          1 11.409302
+23 {Role}       => {HU}      0.08030982          1  8.855596
+24 {Ngtv}       => {Negativ} 0.09743172          1  6.210127
+25 {ECON,                                                   
+    Name}       => {POLIT}   0.01426824          1  8.547038
+26 {MALE,                                                   
+    Role}       => {HU}      0.01059927          1  8.855596
+27 {HU,                                                     
+    MALE}       => {Role}    0.01059927          1 12.451777
+28 {EnlPt,                                                  
+    Role}       => {EnlTot}  0.01019160          1 11.409302
+29 {EnlTot,                                                 
+    Role}       => {EnlPt}   0.01019160          1 74.333333
+30 {EnlPt,                                                  
+    HU}         => {EnlTot}  0.01019160          1 11.409302
+31 {EnlPt,                                                  
+    Role}       => {HU}      0.01019160          1  8.855596
+32 {EnlPt,                                                  
+    HU}         => {Role}    0.01019160          1 12.451777
+33 {POLIT,                                                  
+    PowAren}    => {PowTot}  0.01019160          1  6.178841
+34 {Objective,                                              
+    Social}     => {PLACE}   0.01100693          1 19.782258
+35 {Objective,                                              
+    Tool}       => {Object}  0.01630656          1 12.776042
+36 {COM,                                                    
+    ComnObj}    => {Object}  0.01630656          1 12.776042
+37 {ComnObj,                                                
+    Objective}  => {Object}  0.01059927          1 12.776042
+38 {Academ,                                                 
+    EnlOth}     => {EnlTot}  0.01141459          1 11.409302
+39 {Subjective,                                             
+    WlbPhys}    => {WlbTot}  0.01141459          1 24.530000
+40 {EMOT,                                                   
+    Pain}       => {Negativ} 0.01304525          1  6.210127
+41 {Ngtv,                                                   
+    Pain}       => {Negativ} 0.01182226          1  6.210127
+42 {TIME,                                                   
+    TimeSpc}    => {Time.}   0.02568284          1 20.106557
+43 {Time.,                                                  
+    TIME}       => {ABS}     0.02853649          1 16.463087
+44 {TIME,                                                   
+    TimeSpc}    => {ABS}     0.02568284          1 16.463087
+45 {EMOT,                                                   
+    Ngtv}       => {Negativ} 0.01182226          1  6.210127
+46 {Negate,                                                 
+    Ngtv}       => {Negativ} 0.01059927          1  6.210127
+47 {EnlOth,                                                 
+    Know}       => {EnlTot}  0.01222992          1 11.409302
+48 {EVAL,                                                   
+    Vice}       => {Ngtv}    0.01630656          1 10.263598
+49 {EVAL,                                                   
+    Vice}       => {Negativ} 0.01630656          1  6.210127
+50 {EVAL,                                                   
+    Ngtv}       => {Negativ} 0.01875255          1  6.210127
