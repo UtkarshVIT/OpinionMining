@@ -5,10 +5,12 @@ from bs4 import BeautifulSoup
 import sys
 reload(sys)
 
+#set deafult encoding to utf-8 for file writing
 sys.setdefaultencoding('utf-8')
 
 patt = re.compile("[^\t]+")
 
+#function to remove articles having sports tags(subjectivity filter)
 def sportsFilter(tagList):
 	patt = r"[a-z, ]?sport"
 	for tag in tagList:
@@ -16,6 +18,7 @@ def sportsFilter(tagList):
 			return True
 	return False
 
+#class to define json format for writing news articles
 class NewsObject:
 	def __init__(self, title, date, content):
 		self.title = title
@@ -23,55 +26,73 @@ class NewsObject:
 		self.content = content
 		self.tags = []
 
+#query parameters
 head = "http://content.guardianapis.com/search?"
-query = "q=" + "spain"
+queryList = ["saudi%20arabia","egypt","hungary"]
 apiKey = "&api-key=" + "ed0d3545-4b8f-4bbf-862a-5098ac74c2c0"
-addLater = "&tag=politics/politics&from-date=2014-01-01&api-key=ed0d3545-4b8f-4bbf-862a-5098ac74c2c0')"
-request = Request(head + query + apiKey)
 
-try:
-    response = urlopen(request)
-    jsonObject = json.loads(response.read())
+for country in queryList:
+	query = "q="+country
+	request = Request(head + query + apiKey)
 
-except URLError, e:
-    print 'Got an error code:', e
+	# check if we the api reuturns any result
+	try:
+		#request the API
+	    response = urlopen(request)
 
-results = jsonObject['response']['results']
-print "The Number of objects in this list are " + str(len(results))
-ls = []
-jsonToWrite=""
-count =1
-for obj in results:
-		try:
-			html = BeautifulSoup(urlopen(Request(obj['webUrl'])).read())
-			print obj['webUrl']
+	    #decode the returned links in json format
+	    jsonObject = json.loads(response.read())
+
+	except URLError, e:
+	    print 'Got an error code:', e
+
+	#results list contains the links to the news articles and their meta data
+	results = jsonObject['response']['results']
+	
+	print "The Number of objects in " + country + " list are " + str(len(results))
+	
+	ls = []
+	jsonToWrite=""
+	
+	for obj in results:
+			try:
+				#fetch the url if it exists
+				html = BeautifulSoup(urlopen(Request(obj['webUrl'])).read())
+				print obj['webUrl']
+				
+			except URLError, e:
+				print "Problem with the url or with tags"
+				continue
+
+			#check if the keywords of the article are present in the source code 
+			if (html.find(attrs={"name":"keywords"})):
+				articleTags = html.find(attrs={"name":"keywords"})['content'].split(',')
+			else:
+				continue
+
+			#skip if its a sports article	
+			if sportsFilter(articleTags):
+				continue
+
+			#get the html content in the main article 
+			contentOfMainArticle = html.find('div', itemprop='articleBody')
+			completeTextInMainArticle = ""
+
+			#find the contents of the <p> tag in main article 
+			for paraInMainArticle in contentOfMainArticle.findAll('p'):
+				#get only pure text in main article(remove content of other tags)
+				for textFragmentInMainArticle in paraInMainArticle.findAll(text=True):
+					completeTextInMainArticle +=  textFragmentInMainArticle
+
+			#create a dictionary object of the article content 
+			dictionaryObject = NewsObject(obj["webTitle"], obj["webPublicationDate"], completeTextInMainArticle)
+			dictionaryObject.tags = articleTags
+			dictionaryObject = dictionaryObject.__dict__
 			
-		except URLError, e:
-			print "Problem with the url or with tags"
-			continue
-
-		if (html.find(attrs={"name":"keywords"})):
-			articleTags = html.find(attrs={"name":"keywords"})['content'].split(',')
-		else:
-			continue
-
-		if sportsFilter(articleTags):
-			continue
-
-		contentOfMainArticle = html.find('div', itemprop='articleBody')
-		completeTextInMainArticle = ""
-
-		for paraInMainArticle in contentOfMainArticle.findAll('p'):
-			for textFragmentInMainArticle in paraInMainArticle.findAll(text=True):
-				completeTextInMainArticle +=  textFragmentInMainArticle
-
-		dictionaryObject = NewsObject(obj["webTitle"], obj["webPublicationDate"], completeTextInMainArticle)
-		dictionaryObject.tags = articleTags
-		dictionaryObject = dictionaryObject.__dict__
-		jsonToWrite += json.dumps(dictionaryObject)+","
-		
-		dataFile = open('RawNewsArticles.txt', 'a')
-		dataFile.write(jsonToWrite)
-		dataFile.close()
+			#write a json object with the dictionary object
+			jsonToWrite += json.dumps(dictionaryObject)+","
 			
-		print "Loop executed"
+			#write data to a file
+			dataFile = open('RawNewsArticles.txt', 'a')
+			dataFile.write(jsonToWrite)
+			dataFile.close()
