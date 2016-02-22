@@ -23,8 +23,10 @@ class NewsObject:
 		self.content = content
 		self.tags = []
 
+#keyword to add query 
+keyword=raw_input("keyword-->")
 head = "http://content.guardianapis.com/search?"
-query = "q=" + "spain"
+query = "q=" + keyword
 apiKey = "&api-key=" + "ed0d3545-4b8f-4bbf-862a-5098ac74c2c0"
 addLater = "&tag=politics/politics&from-date=2014-01-01&api-key=ed0d3545-4b8f-4bbf-862a-5098ac74c2c0')"
 request = Request(head + query + apiKey)
