@@ -28,7 +28,7 @@ class NewsObject:
 
 #query parameters
 head = "http://content.guardianapis.com/search?"
-queryList = ["saudi%20arabia","egypt","hungary"]
+queryList = ["antarctica", "belarus"]
 apiKey = "&api-key=" + "ed0d3545-4b8f-4bbf-862a-5098ac74c2c0"
 
 for country in queryList:
@@ -57,7 +57,7 @@ for country in queryList:
 	for obj in results:
 			try:
 				#fetch the url if it exists
-				html = BeautifulSoup(urlopen(Request(obj['webUrl'])).read())
+				html = BeautifulSoup(urlopen(Request(obj['webUrl'])).read(),'lxml')
 				print obj['webUrl']
 				
 			except URLError, e:
@@ -77,6 +77,10 @@ for country in queryList:
 			#get the html content in the main article 
 			contentOfMainArticle = html.find('div', itemprop='articleBody')
 			completeTextInMainArticle = ""
+
+			#condition to skip if the page does not contain the specified div tag
+			if contentOfMainArticle == None:
+				continue
 
 			#find the contents of the <p> tag in main article 
 			for paraInMainArticle in contentOfMainArticle.findAll('p'):
