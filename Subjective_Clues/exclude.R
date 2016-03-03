@@ -1,3 +1,6 @@
+input= function()
+{
+
 exclude=c("Academ","Econ.","Exprsv","Legal",
           "Milit","Polit.","Relig",
           "Role","COLL","Race",
@@ -8,4 +11,4 @@ exclude=c("Academ","Econ.","Exprsv","Legal",
           "PtLw","TIME","NUMB",
           "Quan","FREQ","CARD","Name",
           "ArenaLw","ECON")
-          
+}

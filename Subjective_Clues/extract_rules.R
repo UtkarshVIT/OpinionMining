@@ -1,10 +1,13 @@
   #param =("lift","support","confidence")
   #exclude- categories to exclude out of 186 categories present in general inquirer
+  #load exclude and param using input()
+  input()
+  param=readline("param-->")
   #load libraries for apriori
   library("arules")
   library("arulesViz")
   #Read from General Inquirer
-  word_database=read.csv("inquireraugmented.csv")
+  word_database=read.csv("Data/csv/inquireraugmented.csv")
   #Convert toupper to match general Inquirer Input
   word_database$Entry=toupper(word_database$Entry)
   #Delete source col
@@ -13,8 +16,11 @@
   word_database$tags=0
   #Don't forget to exclude # words
   #Read sentences file from news articles
-  sentences_subj=read.csv("SubjectiveNews.csv",header= F)
-  sentences_obj=read.csv("ObjectiveNews.csv",header= F)
+  type_file=readline("type-->")
+  name_subj=paste("Data/csv/","SubjectiveNews_",type_file,".csv",sep="")
+  name_obj=paste("Data/csv/","ObjectiveNews_",type_file,".csv",sep="")
+  sentences_subj=read.csv(name_subj,header= F)
+  sentences_obj=read.csv(name_obj,header= F)
   #Give name to col containing words
   colnames(sentences_subj)="words"
   colnames(sentences_obj)="words"
@@ -45,7 +51,7 @@
   for (i in 2:length(common_words_subj))
   {
     tags=c()
-    temp_subj[i,]=word_database[word_database$Entry==common_words[i],]
+    temp_subj[i,]=word_database[word_database$Entry==common_words_subj[i],]
     for(j in 2:(ncol(temp_subj)-1) )
     { 
       if(temp_subj[i,j]!="")
@@ -63,24 +69,21 @@
   for (i in 2:length(common_words_obj))
   {
     tags=c()
-    temp_obj[i,]=word_database[word_database$Entry==common_words[i],]
-    for(j in 2:(ncol(temp_subj)-1) )
+    temp_obj[i,]=word_database[word_database$Entry==common_words_obj[i],]
+    for(j in 2:(ncol(temp_obj)-1) )
     { 
-      if(temp_subj[i,j]!="")
+      if(temp_obj[i,j]!="")
       {
-        tags=append(tags,colnames(temp_subj)[j])
+        tags=append(tags,colnames(temp_obj)[j])
       }
       
     }
-    tags=append(tags,"Subjective")
-    temp_subj[i,]$tags=list(tags)
+    tags=append(tags,"Objective")
+    temp_obj[i,]$tags=list(tags)
     #print (temp[i,]$tags)
   }
-  View(temp_subj)
-#   convert tags into transactions
-  trans=as(temp$tags,"transactions")
-  #extract apriori rules
-  rules = apriori(trans, parameter=list(support=0.01, confidence=0.5))
-  #display apriori rules by param - "lift", "support", "confidence"
-  inspect(head(sort(rules, by=param),50))
+  temp=rbind(temp_subj,temp_obj)
+  View(temp)
+  apriori_report(temp,param,type_file)
+  
 #   

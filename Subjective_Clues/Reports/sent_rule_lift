@@ -1,0 +1,118 @@
+   lhs             rhs          support confidence     lift
+1  {Affil,                                                 
+    AffTot}     => {AffOth}  0.01078431  1.0000000 56.66667
+2  {AffOth}     => {AffTot}  0.01764706  1.0000000 53.68421
+3  {AffTot}     => {AffOth}  0.01764706  0.9473684 53.68421
+4  {SklOth}     => {SklTOT}  0.01862745  1.0000000 53.68421
+5  {SklTOT}     => {SklOth}  0.01862745  1.0000000 53.68421
+6  {Affil,                                                 
+    AffOth}     => {AffTot}  0.01078431  1.0000000 53.68421
+7  {AffOth,                                                
+    Objective}  => {AffTot}  0.01372549  1.0000000 53.68421
+8  {Objective,                                             
+    SklOth}     => {SklTOT}  0.01470588  1.0000000 53.68421
+9  {Objective,                                             
+    SklTOT}     => {SklOth}  0.01470588  1.0000000 53.68421
+10 {AffTot,                                                
+    Objective}  => {AffOth}  0.01372549  0.9333333 52.88889
+11 {Pstv,                                                  
+    RspTot}     => {RspOth}  0.01568627  1.0000000 46.36364
+12 {RspTot,                                                
+    Strong}     => {RspOth}  0.01078431  1.0000000 46.36364
+13 {Positiv,                                               
+    RspTot}     => {RspOth}  0.01764706  1.0000000 46.36364
+14 {Pstv,                                                  
+    RspTot,                                                
+    Strong}     => {RspOth}  0.01078431  1.0000000 46.36364
+15 {Positiv,                                               
+    Pstv,                                                  
+    RspTot}     => {RspOth}  0.01568627  1.0000000 46.36364
+16 {Objective,                                             
+    Pstv,                                                  
+    RspTot}     => {RspOth}  0.01274510  1.0000000 46.36364
+17 {Positiv,                                               
+    RspTot,                                                
+    Strong}     => {RspOth}  0.01078431  1.0000000 46.36364
+18 {Objective,                                             
+    Positiv,                                               
+    RspTot}     => {RspOth}  0.01372549  1.0000000 46.36364
+19 {Positiv,                                               
+    Pstv,                                                  
+    RspTot,                                                
+    Strong}     => {RspOth}  0.01078431  1.0000000 46.36364
+20 {Objective,                                             
+    Positiv,                                               
+    Pstv,                                                  
+    RspTot}     => {RspOth}  0.01274510  1.0000000 46.36364
+21 {Objective,                                             
+    RspTot}     => {RspOth}  0.01666667  0.9444444 43.78788
+22 {RspTot}     => {RspOth}  0.02156863  0.8800000 40.80000
+23 {RspOth}     => {RspTot}  0.02156863  1.0000000 40.80000
+24 {Objective,                                             
+    RcTot}      => {RcEthic} 0.01568627  0.8000000 40.80000
+25 {Pstv,                                                  
+    RspOth}     => {RspTot}  0.01568627  1.0000000 40.80000
+26 {RspOth,                                                
+    Strong}     => {RspTot}  0.01078431  1.0000000 40.80000
+27 {Positiv,                                               
+    RspOth}     => {RspTot}  0.01764706  1.0000000 40.80000
+28 {Objective,                                             
+    RspOth}     => {RspTot}  0.01666667  1.0000000 40.80000
+29 {Pstv,                                                  
+    RspOth,                                                
+    Strong}     => {RspTot}  0.01078431  1.0000000 40.80000
+30 {Positiv,                                               
+    Pstv,                                                  
+    RspOth}     => {RspTot}  0.01568627  1.0000000 40.80000
+31 {Objective,                                             
+    Pstv,                                                  
+    RspOth}     => {RspTot}  0.01274510  1.0000000 40.80000
+32 {Positiv,                                               
+    RspOth,                                                
+    Strong}     => {RspTot}  0.01078431  1.0000000 40.80000
+33 {Objective,                                             
+    Positiv,                                               
+    RspOth}     => {RspTot}  0.01372549  1.0000000 40.80000
+34 {Positiv,                                               
+    Pstv,                                                  
+    RspOth,                                                
+    Strong}     => {RspTot}  0.01078431  1.0000000 40.80000
+35 {Objective,                                             
+    Positiv,                                               
+    Pstv,                                                  
+    RspOth}     => {RspTot}  0.01274510  1.0000000 40.80000
+36 {RcEthic}    => {RcTot}   0.01960784  1.0000000 39.23077
+37 {RcTot}      => {RcEthic} 0.01960784  0.7692308 39.23077
+38 {Objective,                                             
+    RcEthic}    => {RcTot}   0.01568627  1.0000000 39.23077
+39 {EMOT,                                                  
+    WlbTot}     => {WlbPsyc} 0.01470588  0.9375000 38.25000
+40 {EVAL,                                                  
+    Vice}       => {NegAff}  0.01078431  0.5238095 33.39286
+41 {EVAL,                                                  
+    Ngtv,                                                  
+    Vice}       => {NegAff}  0.01078431  0.5238095 33.39286
+42 {EVAL,                                                  
+    Negativ,                                               
+    Vice}       => {NegAff}  0.01078431  0.5238095 33.39286
+43 {EVAL,                                                  
+    Negativ,                                               
+    Ngtv,                                                  
+    Vice}       => {NegAff}  0.01078431  0.5238095 33.39286
+44 {EMOT,                                                  
+    Ngtv}       => {Pain}    0.01274510  0.8666667 31.57143
+45 {EMOT,                                                  
+    Negativ,                                               
+    Ngtv}       => {Pain}    0.01274510  0.8666667 31.57143
+46 {Positiv,                                               
+    PowTot}     => {PowCoop} 0.01078431  0.5000000 30.00000
+47 {EMOT,                                                  
+    Negativ,                                               
+    Objective}  => {Pain}    0.01078431  0.7857143 28.62245
+48 {EMOT,                                                  
+    Negativ}    => {Pain}    0.01862745  0.7600000 27.68571
+49 {FormLw,                                                
+    Subjective} => {COM}     0.01176471  1.0000000 24.28571
+50 {ComForm,                                               
+    FormLw,                                                
+    Subjective} => {COM}     0.01078431  1.0000000 24.28571
