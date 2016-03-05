@@ -9,7 +9,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 patt = re.compile("[^\t]+")
-
+	
 #function to remove articles having sports tags(subjectivity filter)
 def sportsFilter(tagList):
 	patt = r"[a-z, ]?sport"
@@ -20,9 +20,10 @@ def sportsFilter(tagList):
 
 #class to define json format for writing news articles
 class NewsObject:
-	def __init__(self, title, date, content):
+	def __init__(self, title, date, country, content):
 		self.title = title
 		self.date = date
+		self.country = country
 		self.content = content
 		self.tags = []
 
@@ -30,8 +31,10 @@ class NewsObject:
 head = "http://content.guardianapis.com/search?"
 queryList = ["india","pakistan","china","russia","japan","north%20korea","iran","iraq","singapore","australia","new%20zealand","germany","spain","italy","france","scotland","egypt","turkey","israel","greece","switzerland","monaco","poland","brazil","argentina","chile","canada","mexico"]
 apiKey = "&api-key=" + "ed0d3545-4b8f-4bbf-862a-5098ac74c2c0"
-yearList = ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"]
-quarterList = [["-1-1","-3-30"],["-4-1","-6-30"],["-7-1","-9-30"],["-10-1","-12-30"]]
+#yearList = ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"]
+yearList = ["2008"]
+#quarterList = [["-1-1","-3-30"],["-4-1","-6-30"],["-7-1","-9-30"],["-10-1","-12-30"]]
+quarterList = [["-1-1","-3-30"]]
 
 for country in queryList:
 	for year in yearList:
@@ -100,7 +103,7 @@ for country in queryList:
 							completeTextInMainArticle +=  textFragmentInMainArticle
 
 					#create a dictionary object of the article content 
-					dictionaryObject = NewsObject(obj["webTitle"], obj["webPublicationDate"], completeTextInMainArticle)
+					dictionaryObject = NewsObject(obj["webTitle"], obj["webPublicationDate"], country, completeTextInMainArticle)
 					dictionaryObject.tags = articleTags
 					dictionaryObject = dictionaryObject.__dict__
 					
@@ -108,6 +111,6 @@ for country in queryList:
 					jsonToWrite += json.dumps(dictionaryObject)+","
 					
 					#write data to a file
-					dataFile = open('RawNewsArticles.txt', 'a')
+					dataFile = open('rawArticle-' + country + '.txt', 'a')
 					dataFile.write(jsonToWrite)
 					dataFile.close()
