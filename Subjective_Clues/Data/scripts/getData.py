@@ -31,10 +31,9 @@ class NewsObject:
 head = "http://content.guardianapis.com/search?"
 queryList = ["india","pakistan","china","russia","japan","north%20korea","iran","iraq","singapore","australia","new%20zealand","germany","spain","italy","france","scotland","egypt","turkey","israel","greece","switzerland","monaco","poland","brazil","argentina","chile","canada","mexico"]
 apiKey = "&api-key=" + "ed0d3545-4b8f-4bbf-862a-5098ac74c2c0"
-#yearList = ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"]
-yearList = ["2008"]
-#quarterList = [["-1-1","-3-30"],["-4-1","-6-30"],["-7-1","-9-30"],["-10-1","-12-30"]]
-quarterList = [["-1-1","-3-30"]]
+yearList = ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"]
+quarterList = [["-1-1","-3-30"],["-4-1","-6-30"],["-7-1","-9-30"],["-10-1","-12-30"]]
+
 
 for country in queryList:
 	for year in yearList:
