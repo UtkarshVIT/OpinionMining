@@ -1,7 +1,7 @@
   #param =("lift","support","confidence")
   #exclude- categories to exclude out of 186 categories present in general inquirer
   #load exclude and param using input()
-  input()
+  exclude=exclude_tags()
   param=readline("param-->")
   #load libraries for apriori
   library("arules")

@@ -1,4 +1,4 @@
-input= function()
+exclude_tags= function()
 {
 
 exclude=c("Academ","Econ.","Exprsv","Legal",
@@ -11,4 +11,5 @@ exclude=c("Academ","Econ.","Exprsv","Legal",
           "PtLw","TIME","NUMB",
           "Quan","FREQ","CARD","Name",
           "ArenaLw","ECON")
+exclude
 }
