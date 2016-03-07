@@ -41,6 +41,7 @@ def clean_data():
 	for i in range(1,len(data)):
 		content_all=content_all + " " + data[i]['value']
 	content_all=unicodeToAscii(content_all)
+	print content_all
 	tokens=nltk.word_tokenize(content_all)
 	#---------remove stopwords-----------------------------------------------#
 	letters_only = re.sub("[^a-zA-Z]", " ", content_all) 
