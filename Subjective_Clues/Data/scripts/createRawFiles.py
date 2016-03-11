@@ -44,16 +44,16 @@ for f in os.listdir(mypath):
     if checkName(f):
     	print f
     	fileToRead = open(f, 'r')
-    	"""
-        
+    	
+        """
         content = fileToRead.read()
         fileToRead.close()
-        content = content[:-2]
+        content = content[:-1]
         fileToWrite = open(f,'w')
-        fileToWrite.write(content + ']')
+        fileToWrite.write('[' + content + ']')
         fileToWrite.close()
-        """
         
+        """
         jsonArray = json.loads(unicodeToAscii( fileToRead.read() ))
 
         for obj in jsonArray:
@@ -64,7 +64,7 @@ for f in os.listdir(mypath):
         	csvWriter.writerow((str(count), obj['title'].encode('utf-8')))
         	createFile.close()
         	count += 1
-
+        
 fileToMap.close()
 
 """
