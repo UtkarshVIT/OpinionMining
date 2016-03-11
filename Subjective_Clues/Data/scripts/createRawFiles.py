@@ -2,6 +2,7 @@ import os
 from os.path import isfile, join
 import json
 import re
+import csv
 
 unicodeToAsciiMap = {u'\u2019':"'", u'\u2018':"`", u'\u0022':'"', u'\u00a3':" " }
 mypath = str(os.path.dirname(os.path.abspath(__file__)))
@@ -36,25 +37,35 @@ def checkName(fileName):
 
 
 count = 1
-for f in os.listdir(mypath):
-    if checkName(f) and f != 'rawArticle-china.txt':
-    	print f
-        fileToRead = open(f, 'r')
-        f2 = open(f, 'w')	
-        #jsonArray = json.loads(unicodeToAscii( fileToRead.read() ))
-        temp = fileToRead.read()
-        temp = '[' + temp + ']'
-        f2.write(temp)
-        f2.close()
+fileToMap = open('myMap.csv', 'wt')
+csvWriter = csv.writer(fileToMap)
 
+for f in os.listdir(mypath):
+    if checkName(f):
+    	print f
+    	fileToRead = open(f, 'r')
+    	"""
+        
+        content = fileToRead.read()
+        fileToRead.close()
+        content = content[:-2]
+        fileToWrite = open(f,'w')
+        fileToWrite.write(content + ']')
+        fileToWrite.close()
         """
+        
+        jsonArray = json.loads(unicodeToAscii( fileToRead.read() ))
+
         for obj in jsonArray:
+
         	fileName =  obj['country'] + '_' + obj['date'] + '_' + str(count)
         	createFile =  open(fileName, 'w')
         	createFile.write( obj['content'].encode('utf-8') )
+        	csvWriter.writerow((str(count), obj['title'].encode('utf-8')))
         	createFile.close()
         	count += 1
-        """
+
+fileToMap.close()
 
 """
 mypath = str(os.path.dirname(os.path.abspath(__file__)))
