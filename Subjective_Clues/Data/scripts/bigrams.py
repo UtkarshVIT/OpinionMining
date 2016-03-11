@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # _*_ coding:utf-8 _*_
+=======
+>>>>>>> 17db5338a74e41ab93db59d688a35465d9182831
 import nltk
 import json
 import re
@@ -32,6 +35,9 @@ def unicodeToAscii(inStr):
 f = file('../json/SubjectiveNews(sent_rule)')
 string = f.read()
 object1 = json.loads(string)
+<<<<<<< HEAD
 print object1[0]['value']
+=======
+>>>>>>> 17db5338a74e41ab93db59d688a35465d9182831
 string = unicodeToAscii(object1[0]['value'])
 print string
