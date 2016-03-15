@@ -1,0 +1,3 @@
+base="database/docs/"
+line="raw_xyz"
+echo "$base $line" > test.doclist
