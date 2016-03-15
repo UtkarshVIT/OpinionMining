@@ -1,0 +1,10 @@
+#ls  ../raw_text_articles_topic/ > ../filename.txt
+base="/home/titu/Desktop/Opinion_Mining/opinionfinderv2.0/database/docs/"
+while read line
+do
+cd /home/titu/Desktop/opinionMining-/Subjective_Clues/Data/scripts/
+cp ../raw_text_articles_topic/$line /home/titu/Desktop/Opinion_Mining/opinionfinderv2.0/database/docs/
+echo "$base$line" > ~/Desktop/Opinion_Mining/opinionfinderv2.0/test.doclist
+cd /home/titu/Desktop/Opinion_Mining/opinionfinderv2.0/
+java -Xmx1g -classpath lib/weka.jar:./lib/stanford-postagger.jar:opinionfinder.jar opin.main.RunOpinionFinder test.doclist -d
+done < ../filename.txt
